@@ -3,11 +3,11 @@ const Discord = require('discord.js');
 
 exports.run = function(client, message) {
 const embed = new Discord.RichEmbed()
-.setColor('Blue')
+.setColor('Rainbow')
 .setTitle('Sunucu Yedek al ve Yükle Komutları')
 .setTimestamp()
-.addField('!yedek-al','Sunucunuzun yedeğini alır.')
-.addField('!yedek-yükle','Aldığınız yedeği geri yükler.')
+.addField('mf!yedek-al','Sunucunuzun yedeğini alır.')
+.addField('mf!yedek-yükle','Aldığınız yedeği geri yükler.')
 .setFooter('iBOT Sunucu Yedek ve Geri Yükleme Sistemi.')
 .setTimestamp()
 .setThumbnail(client.user.avatarURL)
