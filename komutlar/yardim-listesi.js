@@ -49,5 +49,5 @@ exports.conf = {
 exports.help = {
   name: "yardım",
   description: "Tüm komutları gösterir.",
-  usage: "yetkili "
+  usage: "yardım "
 };
