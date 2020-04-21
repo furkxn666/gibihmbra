@@ -12,7 +12,7 @@ exports.run = (client, message, args) => {
     
     const avatar = new Discord.RichEmbed()
         .setColor("RANDOM")
-        .setAuthor("» Buyur Avatarın,")
+        .setAuthor("» ${user} ' in avatarı'")
         .setImage(user.avatarURL)
     message.channel.sendEmbed(avatar)
     

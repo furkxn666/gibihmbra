@@ -83,7 +83,7 @@ exports.run = async (client, message, args) => {
 					}
 					reset();
 				} else if (choice === 'kaç') {
-					await message.channel.send(`${user}, kaçtı! Korkak!`);
+					await message.channel.send(`${user}, Savaştan Kaçtı!  Sanırım karşı rakip fazla kalkan kullandı `);
 					forfeit();
 					break;
 				} else {
