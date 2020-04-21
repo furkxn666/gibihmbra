@@ -13,11 +13,11 @@ exports.run = (client, message, params) => {
     )
     .addField(
       "» Linkler",
-      `[Bot Davet Linki](https://discordapp.com/oauth2/authorize?client_id=662355232591970321&scope=bot&permissions=805314622)` +
+      `[Bot Davet Linki](https://discordapp.com/oauth2/authorize?client_id=702221500035498025&scope=bot&permissions=8)` +
         "**\n**" +
-        `[Bota Oyver](https://botsfordiscord.com/bot/650739604789395476/vote)` +
+        `[Bota Oyver]( https://maximum-fyukas.glitch.me )` +
         "**\n**" +
-        `[Destek Sunucusu](https://discord.gg/AHe4u4m)`,
+        `[Destek Sunucusu](https://discord.gg/QyxzT6f)`,
       false
     )
     .setFooter("iBOT | Yardım Komutları");
