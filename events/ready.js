@@ -9,7 +9,7 @@ module.exports = client => {
 var oyun = [
        "mf!yardım",
        "mf!davet | Botumuzu Ekleyin!",
-       "mf!davet | Oy Verin!"
+       "mf!ping | Pingim Kaç acaba ? "
     ];
 
     setInterval(function() {
