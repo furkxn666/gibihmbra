@@ -134,10 +134,10 @@ client.on('message', async message => {
   let u = message.mentions.users.first() || message.author;
   if (command === "sunucu-kurulum") {
   if (message.guild.channels.find(channel => channel.name === "Bot Kullanımı")) return message.channel.send("Sunucu Zaten Ayarlanmış")
-  message.channel.send(`Bot Bilgi Kanallarının kurulumu başlatılsın mı? başlatılacak ise **kabul** yazınız.`)
+  message.channel.send(`Bot Bilgi Kanallarının kurulumu başlatılsın mı? başlatılacak ise **evet** yazınız.`)
       if (!message.member.hasPermission('ADMINISTRATOR'))
   return message.channel.send(" Bu Kodu `Yönetici` Yetkisi Olan Kullanabilir");
-      message.channel.awaitMessages(response => response.content === 'kabul', {
+      message.channel.awaitMessages(response => response.content === 'evet', {
         max: 1,
         time: 10000,
         errors: ['time'],

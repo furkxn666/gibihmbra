@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 
 const prosoyguncu = [
+  
   "85 Türk Lirası Soydun",
   "10 Türk Lirası Soydun",
   "Ahhaa Polise Yakalandın.",

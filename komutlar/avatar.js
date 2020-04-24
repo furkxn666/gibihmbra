@@ -21,7 +21,7 @@ exports.run = (client, message, args) => {
 exports.conf = {
   enabled: true, 
   guildOnly: false, 
-  aliases: ["pp"],
+  aliases: ["pp","profilephoto"],
   permLevel: `Yetki gerekmiyor.` 
 };
 

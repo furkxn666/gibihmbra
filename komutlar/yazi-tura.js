@@ -2,7 +2,8 @@ const Discord = require('discord.js');
 
 var hd = [
     "Tura",
-    "Yazı"
+    "Yazı",
+    "Dik"
 ];
 
 module.exports.run = async (bot, message, args) => {
