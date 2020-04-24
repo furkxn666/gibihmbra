@@ -22,5 +22,5 @@ exports.conf = {
 exports.help = {
   name: 'zarat',
   description: 'Zar Atın',
-  usage: ''
+  usage: 'zarat'
 };

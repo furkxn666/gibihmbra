@@ -15,7 +15,7 @@ exports.run = (client, message, params) => {
       "» Linkler",
       `[Bot Davet Linki](https://discordapp.com/oauth2/authorize?client_id=702221500035498025&scope=bot&permissions=8)` +
         "**\n**" +
-        `[Bota Oyver]( https://maximum-fyukas.glitch.me )` +
+        `[Botun İnternet Sitesi]( https://maximum-fyukas.glitch.me )` +
         "**\n**" +
         `[Destek Sunucusu](https://discord.gg/QyxzT6f)`,
       false
