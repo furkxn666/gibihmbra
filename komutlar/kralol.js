@@ -10,13 +10,13 @@ exports.run = (client, message, params) => {
     return message.author.sendEmbed(ozelmesajuyari); }
     if (message.channel.type !== 'dm') {
       const sunucubilgi = new Discord.RichEmbed()
-    .setAuthor(message.author.username + ' Artık Kral Oldun!!!')
+    .setAuthor(message.author.username + ' Artık Kral Oldun!!! a')
+
     .setColor(3447003)
     .setTimestamp()
     .setDescription('')
-        .setImage(`https://media.giphy.com/media/F0uvYzyr2a7Li/giphy.gif`)
-    return message.channel.sendEmbed(sunucubilgi);
-    }
+        .setImage('https://media.giphy.com/media/F0uvYzyr2a7Li/giphy.gif')
+return message.channel.sendEmbed(sunucubilgi);}
 };
 exports.conf = {
   enabled: true,
