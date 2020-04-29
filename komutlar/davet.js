@@ -18,7 +18,7 @@ exports.conf = {
   enabled: true,
   guildOnly: false,
   aliases: ['davet','davetet'],
-  permLevel: 0,
+  permLevel: 0
 };
 
 exports.help = {
