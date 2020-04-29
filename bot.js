@@ -985,10 +985,6 @@ client.on('message', msg => {
 
 
 
-
-
-
-
 const express = require("express");
 const app = express();
 const http = require("http");
@@ -1022,6 +1018,8 @@ var prefix = ayarlar.prefix;
 const Log = message => {
     console.log(`${message}`);
 };
+
+
 
 
 
