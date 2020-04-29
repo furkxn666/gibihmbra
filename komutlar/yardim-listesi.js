@@ -9,7 +9,7 @@ exports.run = (client, message, params) => {
     .setDescription("")
     .setColor(0x00ffff)
     .setDescription(
-      "**•** **mf!yetkili** Sunucuyu yönetmek için gerekli olan komutlar.\n**•** **mf!eğlence** Eğlenmek için bulunan komutlar.\n**•** **mf!kullanıcı** Kullanıcılar için komutlar.\n**•** **mf!bot** Bot ile alakalı komutları görürsünüz."
+      "**•** **mf!yetkili** Sunucuyu yönetmek için gerekli olan komutlar.\n**•** **mf!eğlence** Eğlenmek için bulunan komutlar.\n**•** **mf!kullanıcı** Kullanıcılar için komutlar.\n**•** **mf!bot** Bot ile alakalı komutları görürsünüz.\n **•** **mf!müzik** Müzik komutlarını görürsünüz"
     )
     .addField(
       "» Linkler",
