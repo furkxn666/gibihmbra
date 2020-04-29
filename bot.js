@@ -970,3 +970,57 @@ client.on('message', async (msg, member, guild) => {
       } 
       }
     });
+
+
+
+
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'mf!js') {  // İstediğiniz Komut
+       msg.member.addRole("704949338773782592") //Rolü bir yerde bahsedin sonra sağ tıklayıp İD'sini alın
+    msg.reply('Js Rolünü Başarıyla Aldın.'); //Komutu Yazınca cevap ne yazsın?
+  }
+});
+
+
+
+
+
+
+
+
+
+const express = require("express");
+const app = express();
+const http = require("http");
+app.get("/", (request, response) => {
+  console.log(`[PING] Açık tutuyorum...`);
+  response.sendStatus(200);
+});
+    app.listen(process.env.PORT);
+    setInterval(() => {
+    http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
+    }, 280000);
+const discord = require('discord.js');
+const Client = new Discord.Client();
+const Ayarlar = require('./ayarlar.json');
+const Chalk = require('chalk');
+const Fs = require('fs');
+const Ms = require('ms');
+const Moment = require('moment');
+const Jimp = require('jimp');
+const Db = require('quick.db');
+const YouTube = require("simple-youtube-api");
+const ytdl = require("ytdl-core");
+const youtube = new YouTube("AIzaSyCkT_L10rO_NixDHNjoAixUu45TVt0ES-s");
+const queue = new Map();
+const { promisify } = require("util");
+require('./util/eventLoader')(client);
+
+
+var prefix = ayarlar.prefix;
+
+const Log = message => {
+    console.log(`${message}`);
+};
+
+
