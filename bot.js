@@ -996,3 +996,13 @@ app.listen(process.env.PORT);
 setInterval(() => {
   http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me`);
 }, 1000 * 60 * 3);
+
+
+
+client.on("guildMemberAdd", member => {
+const embed = new Discord.RichEmbed()
+.setColor('RANDOM')
+.setTitle('Hoşgeldin')
+.setDescription('${server} adlı sunucumuza hoşgeldiniz!')
+member.send(embed)
+})
