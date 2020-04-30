@@ -984,44 +984,15 @@ client.on('message', msg => {
 
 
 
-
 const express = require("express");
-const app = express();
 const http = require("http");
+const app = express();
+ 
 app.get("/", (request, response) => {
-  console.log(`[PING] Açık tutuyorum...`);
-  response.sendStatus(200);
+  //console.log(Date.now() + " BOT Aktif.");
+  //response.sendStatus(200);
 });
-    app.listen(process.env.PORT);
-    setInterval(() => {
-    http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
-    }, 280000);
-const discord = require('discord.js');
-const Client = new Discord.Client();
-const Ayarlar = require('./ayarlar.json');
-const Chalk = require('chalk');
-const Fs = require('fs');
-const Ms = require('ms');
-const Moment = require('moment');
-const Jimp = require('jimp');
-const Db = require('quick.db');
-const YouTube = require("simple-youtube-api");
-const ytdl = require("ytdl-core");
-const youtube = new YouTube("AIzaSyCkT_L10rO_NixDHNjoAixUu45TVt0ES-s");
-const queue = new Map();
-const { promisify } = require("util");
-require('./util/eventLoader')(client);
-
-
-var prefix = ayarlar.prefix;
-
-const Log = message => {
-    console.log(`${message}`);
-};
-
-
-
-
-
-
-
+app.listen(process.env.PORT);
+setInterval(() => {
+  http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me`);
+}, 1000 * 60 * 3);
