@@ -25,7 +25,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'azeri',
+  name: 'azerbeycan',
   description: 'Etiketlediniz Kişinin Profiline Azerbaycan Effecti Eklenir.',
-  usage: '.aze @User'
+  usage: '.azerbeycan @User'
 };
