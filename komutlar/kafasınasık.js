@@ -10,18 +10,18 @@ exports.run = (client, message, args) => {
   let guild = message.guild
   let reason = args.slice(1).join(' ');
   let user = message.mentions.users.first();
-  if (message.mentions.users.size < 1) return message.reply('Kimin kafasınası kacağını yazmalısın.').catch(console.error);
-    message.channel.send('Kafasına sıkılıyor....')
-      .then(nmsg => nmsg.edit('https://goo.gl/91Y2az'))
-      .then(nmsg => nmsg.edit('https://goo.gl/91Y2az'))
-      .then(nmsg => nmsg.edit('https://goo.gl/91Y2az'))
-      .then(nmsg => nmsg.edit('https://goo.gl/fWHUqt'))
-      .then(nmsg => nmsg.edit('https://goo.gl/fWHUqt'))
-      .then(nmsg => nmsg.edit('https://goo.gl/fWHUqt'))
-      .then(nmsg => nmsg.edit('https://goo.gl/fWHUqt'))
-      .then(nmsg => nmsg.edit('https://goo.gl/fWHUqt'))
-      .then(nmsg => nmsg.edit('https://goo.gl/91Y2az'))
-      .then(nmsg => nmsg.edit('https://goo.gl/91Y2az'))
+  if (message.mentions.users.size < 1) return message.reply('Kimin kafasınası sıkacağını yazmalısın.').catch(console.error);
+    message.channel.send('Kafasına sıkılıyor....Biraz Uzun Olabilir')
+      .then(nmsg => nmsg.edit('https://goo.gl/91Y2az Bekleyiniz'))
+      .then(nmsg => nmsg.edit('https://goo.gl/91Y2az Bekleyiniz'))
+      .then(nmsg => nmsg.edit('https://goo.gl/91Y2az Bekleyiniz'))
+      .then(nmsg => nmsg.edit('https://goo.gl/fWHUqt Bekleyiniz'))
+      .then(nmsg => nmsg.edit('https://goo.gl/fWHUqt Bekleyiniz'))
+      .then(nmsg => nmsg.edit('https://goo.gl/fWHUqt Bekleyiniz'))
+      .then(nmsg => nmsg.edit('https://goo.gl/fWHUqt Bekleyiniz'))
+      .then(nmsg => nmsg.edit('https://goo.gl/fWHUqt Bekleyiniz'))
+      .then(nmsg => nmsg.edit('https://goo.gl/91Y2az Bekleyiniz'))
+      .then(nmsg => nmsg.edit('https://goo.gl/91Y2az Sıkdın Sonuça Bakılıyor'))
       .then(nmsg => nmsg.edit(`${Random[kafasınasık]}`));
      var Random = [
       'Tam isabet',
