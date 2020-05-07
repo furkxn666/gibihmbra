@@ -132,9 +132,9 @@ client.on('message', async message => {
   const args = message.content.slice(prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
   let u = message.mentions.users.first() || message.author;
-  if (command === "sunucu-kurulum") {
+  if (command === "sunucu-kur") {
   if (message.guild.channels.find(channel => channel.name === "Bot Kullanımı")) return message.channel.send("Sunucu Zaten Ayarlanmış")
-  message.channel.send(`Bot Bilgi Kanallarının kurulumu başlatılsın mı? başlatılacak ise **evet** yazınız.`)
+  message.channel.send(`Bot Bilgi Kanallarının kurulumu başlatılsın mı? başlatılacak ise **evet** yazınız. Rol Kurulumu İçin mf!rol-kur yazınız.`)
       if (!message.member.hasPermission('ADMINISTRATOR'))
   return message.channel.send(" Bu Kodu `Yönetici` Yetkisi Olan Kullanabilir");
       message.channel.awaitMessages(response => response.content === 'evet', {

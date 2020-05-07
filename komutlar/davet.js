@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 
-let botid = ('650739604789395476') //bu yere botun id'sini yapıştırın.
+let botid = ('702221500035498025') //bu yere botun id'sini yapıştırın.
 //eğer botunuz dbl(discord bot list) de yoksa Bota Oy Ver (Vote) olmucaktır.
 
 exports.run = (client, message, args) => {
