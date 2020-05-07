@@ -44,6 +44,7 @@ exports.run = async (client, msg, args) => {
       "Matematikte bir konu olsan “Boş Küme” olursun. Havan kime ?",
       "52 ekran televizyon kadar kafan var ama küçük düğmesi kadar beynin yok.",
       "Konu adamlığa geldi, sen git istersen!",
+      "Bana gerizekalı diyonda eş anlamlısı benim sende senin söylediğin",
   
 
 
