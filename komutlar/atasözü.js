@@ -19,7 +19,7 @@ message.channel.send(atasozu)
 exports.conf = {
 enabled: true,
 guildOnly: false,
-aliases: [],
+aliases: ['atasozu'],
 permLevel: 0
 };
 
