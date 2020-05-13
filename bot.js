@@ -965,7 +965,7 @@ client.on("message", message => {
 client.on('message', async (msg, member, guild) => {
   let i = await  db.fetch(`saas_${msg.guild.id}`)
       if(i === 'açık') {
-        if (msg.content.toLowerCase() === 'sa') {
+        if (msg.content.toLowerCase() === 'sa','selamın aleyküm','selamin aleykum','sea') {
         msg.reply('Aleyküm Selam Hoşgeldin ${user}');      
       } 
       }
