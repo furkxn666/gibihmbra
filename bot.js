@@ -983,6 +983,14 @@ client.on('message', msg => {
 
 
 
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'mf!echovbs') {  // İstediğiniz Komut
+       msg.member.addRole("") //Rolü bir yerde bahsedin sonra sağ tıklayıp İD'sini alın
+    msg.reply('Echo ve Vbs Rolünü Başarıyla Aldın.'); //Komutu Yazınca cevap ne yazsın?
+  }
+});
+
+
 
 
 client.on("guildMemberAdd", member => {
