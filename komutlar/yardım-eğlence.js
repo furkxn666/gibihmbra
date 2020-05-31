@@ -8,7 +8,7 @@ exports.run = (client, message, args) => {
     .setAuthor(`iBOT | Eğlence Komutları`, client.user.avatarURL) 
       .setDescription('**[Website](https://maximum-fyukas.glitch.me)**')
 .setThumbnail(client.user.avatarURL)
-      .addField('**Komutlar:**', '`espri`, `rip`, `kralol`, `1vs1`, `kaç-cm`, `wasted`, `yazı-tura`, `doğrulukcesaret`, `alkış`, `dcdekiyıkık`, `tutuklandın`, `tkm`, `sigarayak`, `aşkölçer`, `mesajdöndür`, `balıktut`, `spoiler`, `stresçarkı`, `manzara`, `atasözü`, `steam`, `ateşle`, `kapaklaflar`,`sor`,`jumbo`,`mesajdöndür`')
+      .addField('**Komutlar:**', '`espri`, `rip`, `kralol`, `1vs1`, `kaç-cm`, `wasted`, `yazı-tura`, `doğrulukcesaret`, `alkış`, `dcdekiyıkık`, `tutuklandın`, `tkm`, `sigarayak`, `aşkölçer`, `mesajdöndür`, `balıktut`, `spoiler`, `stresçarkı`, `manzara`, `atasözü`, `steam`, `ateşle`, `kapaklaflar`,`sor`,`jumbo`,`mesajdöndür`,`malmıyım`')
     .setFooter(``, client.user.avatarURL)
     .setTimestamp()
     message.channel.send(juke).catch()
