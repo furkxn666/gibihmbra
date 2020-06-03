@@ -23,7 +23,7 @@ Teşekkürler!
 
 Bot Sahip ID' leri ve isimleri
 
-```    `ᴳᵒᵈ` ` ᶠᵘⁿⁿʸ` ``` erenarslanyeah#1852 >>> Genel Kurucu      |680810676117045260|
+erenarslanyeah#1852 >>> Genel Kurucu      |680810676117045260|
   
   
   MR|ꏪ SAİD PRO#3797  >>> Bot Yardımcısı                     |598581278358634542|
