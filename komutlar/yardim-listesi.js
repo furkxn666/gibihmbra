@@ -19,7 +19,7 @@ exports.run = (client, message, params) => {
         `[Destek Sunucusu](https://discord.gg/QyxzT6f)`,
       false
     )
-    .setFooter("VİKİGS | Yardım Komutları");
+    .setFooter("vikings | Yardım Komutları");
 
   if (!params[0]) {
     const commandNames = Array.from(client.commands.keys());
