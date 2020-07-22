@@ -9,8 +9,7 @@ exports.run = (client, message, params) => {
     .setDescription("")
     .setColor(0x00ffff)
     .setDescription(
-      "**•** **mf!yetkili** Sunucuyu yönetmek için gerekli olan komutlar.\n**•** **mf!eğlence** Eğlenmek için bulunan komutlar.\n**•** **mf!kullanıcı** Kullanıcılar için komutlar.\n**•** **mf!bot** Bot ile alakalı komutları görürsünüz.\n **•** **mf!müzik** Müzik komutlarını görürsünüz"
-    )
+      "**•** **!yetkili** Sunucuyu yönetmek için gerekli olan komutlar.\n**•** **!eğlence** Eğlenmek için bulunan komutlar.\n**•** **!kullanıcı** Kullanıcılar için komutlar.\n**•** **!bot** Bot ile alakalı komutları görürsünüz.\n **•** **!müzik** Müzik komutlarını görürsünüz")
     .addField(
       "» Linkler",
       `[Bot Davet Linki](https://discordapp.com/oauth2/authorize?client_id=702221500035498025&scope=bot&permissions=8)` +
@@ -20,7 +19,7 @@ exports.run = (client, message, params) => {
         `[Destek Sunucusu](https://discord.gg/QyxzT6f)`,
       false
     )
-    .setFooter("iBOT | Yardım Komutları");
+    .setFooter("VİKİGS | Yardım Komutları");
 
   if (!params[0]) {
     const commandNames = Array.from(client.commands.keys());
