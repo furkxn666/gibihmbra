@@ -16,7 +16,7 @@ exports.run = (client, message, args) => {
     .addField('Gonderen Kisi:', `${user.username}#${user.discriminator} (${user.id})`)
     .addField('Bilgiler', reason);
     
-    return guild.channels.get(terfiler.id).sendEmbed(embed);
+    return guild.channels.get(721333707688116246).sendEmbed(embed);
 };
 
 exports.conf = {
