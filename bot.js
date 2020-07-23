@@ -316,7 +316,7 @@ client.on("channelDelete", async channel => {
   
 
    
-const sChannel = channel.guild.channels.find(c=> c.id ==="734143033066389515")
+const sChannel = channel.guild.channels.find(c=> c.id ==="734846172111437895")
   let embed = new Discord.RichEmbed()
     .setColor("BLACK")
     .setDescription(
@@ -335,7 +335,7 @@ sChannel.send(embed)
 
   }, 1500);
 });
-734846172111437895
+
 client.unload = command => {
   return new Promise((resolve, reject) => {
     try {
@@ -351,6 +351,33 @@ client.unload = command => {
     }
   });
   };
+
+client.on('message', async message => {
+ 
+  let prefix = await db.fetch(`prefix_${message.guild.id}`) || ayarlar.prefix
+ 
+  let kullanıcı = message.mentions.users.first() || message.author
+  let afkdkullanıcı = await db.fetch(`afk_${message.author.id}`)
+  let afkkullanıcı = await db.fetch(`afk_${kullanıcı.id}`)
+  let afkkullanıcıı = await db.fetch(`afk_${kullanıcı}`)
+  let sebep = afkkullanıcı
+ 
+  if (message.author.bot) return;
+  if (message.content.includes(`${prefix}afk`)) return;
+
+  if (!message.content.includes(`<@${kullanıcı.id}>`)) {
+    if (afkdkullanıcı) {
+      message.member.setNickname(`${message.author.username}`);
+      
+      message.channel.send(`:sunny: **<@${message.author.id}>** adlı kullanıcı artık **AFK** değil.`)
+      db.delete(`afk_${message.author.id}`)
+    }
+    if (afkkullanıcı) {
+      message.channel.send(`:crescent_moon: **<@${kullanıcı.id}>** adlı Kullanıcı **AFK**. | **SEBEB** : \`${sebep}\``);
+      message.author.send(`Sen Mesaj Attında, **<@${kullanıcı.id}>** adlı Kullanıcı **AFK**. | **SEBEB** : \`${sebep}\``);
+    }
+  }
+});
 
 client.elevation = message => {
   if (!message.guild) {
