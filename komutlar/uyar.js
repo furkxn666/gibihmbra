@@ -3,7 +3,7 @@ const db = require('quick.db');
 
 exports.run = (client,message,args) => {
 
- if(!message.member.roles.has('735592414777180170')) return message.channel.send('Bu komutu sadece **<@735592414777180170>** yetkisine sahip kişiler kullanabilir.').then(message => message.delete(6000));
+ if(!message.member.roles.has('735592414777180170')) return message.channel.send('Bu komutu sadece **<@&735592414777180170>** yetkisine sahip kişiler kullanabilir.').then(message => message.delete(6000));
   message.delete(10)
  let kişi = message.mentions.users.first()
   if(!kişi) return message.channel.send('Lütfen uyarı verilecek bir kullanıcı etiketle!').then(message => message.delete(8000));

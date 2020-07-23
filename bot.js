@@ -76,6 +76,40 @@ client.load = command => {
   });
 };
 
+
+ client.on("channelDelete", async channel => {
+  const entry = await channel.guild
+    .fetchAuditLogs({ type: "CHANNEL_DELETE" })
+    .then(audit => audit.entries.first());
+  const yetkili = await channel.guild.members.get(entry.executor.id);
+  if (yetkili.id === "734142934533800109") return;
+  if (yetkili.id === "734142934533800109") return;
+  if (yetkili.id === "734142932776386651") return;
+  if (yetkili.id === "734142932776386651") return;
+  
+
+   
+const sChannel = channel.guild.channels.find(c=> c.id ==="kanalid")
+  let embed = new Discord.RichEmbed()
+    .setColor("BLACK")
+    .setDescription(
+      `<@${yetkili.id}> isimli kişi ${channel.name} adlı kanalı sildi ve sahip olduğu tüm rolleri alarak, kendisine <@&KayıtsızRolİD> (Kayıtsız) rolünü verdim.`
+    )
+    .setTimestamp();
+sChannel.send(embed)
+  let roles = channel.guild.members.get(yetkili.id).roles.array();
+  try {
+    channel.guild.members.get(yetkili.id).removeRoles(roles);
+  } catch (err) {
+    console.log(err);
+  }
+  setTimeout(function() {
+    channel.guild.members.get(yetkili.id).addRole("rolid");
+
+  }, 1500);
+});     
+
+
 client.unload = command => {
   return new Promise((resolve, reject) => {
     try {
