@@ -379,6 +379,20 @@ client.on('message', async message => {
   }
 });
 
+//--------------------------------Hg Kanalı---------------------------------\\
+client.on("guildMemberAdd", member => {  
+  const kanal = "700297171026837527";
+  let user = client.users.get(member.id);
+  require("moment-duration-format");
+    const kurulus = new Date().getTime() - user.createdAt.getTime();  
+    var kontrol;
+if (kurulus < 1296000000) kontrol = ' **__Bu Hesap Güvenilir Değil__** '
+if (kurulus > 1296000000) kontrol = ' **<a:tik:728589907232161863> __Bu Hesap Güvenilir Gözüküyor__** '
+  moment.locale("tr");
+  let buse = client.channels.get(kanal);
+buse.send("**Hoşgeldin! " + member + " Seninle __\`" + member.guild.memberCount + "\`__ Kişiyiz \n\n  Sunucuya Kayıt Olmak İçin <#734143025365909514> İsim Yaş Yazınız ! \n\n  <@&734142954930831392> Kayıt Sorumlusu Rolündeki yetkililer sizinle ilgilenicektir  \n\n  Hesabın Oluşturulma Tarihi:** " + moment(member.user.createdAt).format("YYYY **__DD MMMM dddd (hh:mm:ss)__**") +  "  \n\n"  + kontrol + " \n\n");
+});
+
 client.elevation = message => {
   if (!message.guild) {
     return;
