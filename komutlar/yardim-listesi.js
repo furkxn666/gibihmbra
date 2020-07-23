@@ -8,7 +8,8 @@ exports.run = (client, message, params) => {
     .setTitle("Komut Listesi")
     .setDescription("")
     .setColor(0x00ffff)
-    .setDescription("<a:tik:728589907232161863> **!yetkili** Sunucuyu yönetmek için gerekli olan komutlar.\n**<a:ayar:735858351002615910>** **!eğlence** Eğlenmek için bulunan komutlar.\n**<a:ayar:735858351002615910>** **!kullanıcı** Kullanıcılar için komutlar.")
+    .setDescription(
+      "**•** **!yetkili** Sunucuyu yönetmek için gerekli olan komutlar.\n**•** **!eğlence** Eğlenmek için bulunan komutlar.\n**•** **!kullanıcı** Kullanıcılar için komutlar.\n**•** **!bot** Bot ile alakalı komutları görürsünüz.")
     .addField(
       "» Linkler",
       `[Bot Davet Linki](https://discord.com/oauth2/authorize?client_id=728572839422328884&scope=bot&permissions=8)` +

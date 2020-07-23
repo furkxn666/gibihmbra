@@ -5,8 +5,8 @@ exports.run = (client, message, args) => {
   
     const juke = new Discord.RichEmbed()
     .setColor('RANDOM')
-    .setAuthor(`iBOT | Eğlence Komutları`, client.user.avatarURL) 
-      .setDescription('**[Website](https://maximum-fyukas.glitch.me)**')
+    .setAuthor(`VİKİNGS | Eğlence Komutları`, client.user.avatarURL) 
+      .setDescription('**[Website](https://vikings-helper.glitch.me)**')
 .setThumbnail(client.user.avatarURL)
       .addField('**Komutlar:**', '`espri`, `rip`, `kralol`, `1vs1`, `kaç-cm`, `wasted`, `yazı-tura`, `doğrulukcesaret`, `alkış`, `dcdekiyıkık`, `tutuklandın`, `tkm`, `sigarayak`, `aşkölçer`, `mesajdöndür`, `balıktut`, `spoiler`, `stresçarkı`, `manzara`, `atasözü`, `steam`, `ateşle`, `kapaklaflar`,`sor`,`jumbo`,`mesajdöndür`,`malmıyım`')
     .setFooter(``, client.user.avatarURL)
