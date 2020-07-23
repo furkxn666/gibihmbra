@@ -25,7 +25,7 @@ if (mesaj.length < 1) return message.channel.send('Write a message');
 u.sendEmbed(mesajat)
 })
 
-message.channel.send(`:white_check_mark: Succesfully DM'd **` + client.guilds.reduce((a, b) => a + b.memberCount, 0).toLocaleString() + `** Members. hehexd`);
+message.channel.send(`:white_check_mark: Succesfully DM'd **` + client.guilds.reduce((a, b) => a + b.memberCount, 0).toLocaleString() + `** Members.`);
 
 };
 
