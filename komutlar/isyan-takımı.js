@@ -3,8 +3,8 @@ const Discord = require('discord.js');
 exports.run = (client, message, args) => {
   let reason = args.slice(1).join(' ');
   let guild = message.guild
-  let terfiler = guild.channels.find('name', 'yetki-başvurusu');
-  if (!terfiler) return message.reply('`yetki-başvurusu` kanalını bulamıyorum.');
+  let terfiler = guild.channels.find('name', 'isyan-takımı-başvuru');
+  if (!terfiler) return message.reply('`slot-başvuru` kanalını bulamıyorum.');
   let user = message.mentions.users.first();
   if (reason.length < 1) return message.reply('Yöneticilerin belirtiği şartları yazınız. ve Kendinizi etiketleyiniz.');
   if (message.mentions.users.size < 1) return message.reply('Isminizi Etiketleyin.').catch(console.error);
@@ -13,16 +13,16 @@ exports.run = (client, message, args) => {
     .setThumbnail("https://i.hizliresim.com/mJ20o2.jpg")
     .setTimestamp()
     .addField('Durum:', 'Bekleniyor')
-    .addField('Gonderen Kisi:', `${user.username}#${user.discriminator} (${user.id})`)
+    .addField('Gonderen Kisi:', `${user.username}#${user.discriminator}`)
     .addField('Bilgiler', reason);
     
-    return guild.channels.get(721333707688116246).sendEmbed(embed);
+    return guild.channels.get(terfiler.id).sendEmbed(embed);
 };
 
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['basvuru'],
+  aliases: ['slot-başvuru'],
   permLevel: 0
 };
 
