@@ -4,7 +4,7 @@ exports.run = (client, message, args) => {
   let reason = args.slice(1).join(' ');
   let guild = message.guild
   let terfiler = guild.channels.find('name', 'isyan-takımı-başvuru');
-  if (!terfiler) return message.reply('`slot-başvuru` kanalını bulamıyorum.');
+  if (!terfiler) return message.reply('`isyan-takımı-başvuru` kanalını bulamıyorum.');
   let user = message.mentions.users.first();
   if (reason.length < 1) return message.reply('Yöneticilerin belirtiği şartları yazınız. ve Kendinizi etiketleyiniz.');
   if (message.mentions.users.size < 1) return message.reply('Isminizi Etiketleyin.').catch(console.error);
@@ -22,7 +22,7 @@ exports.run = (client, message, args) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['slot-başvuru'],
+  aliases: ['isyan-takımı-başvuru'],
   permLevel: 0
 };
 

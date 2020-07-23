@@ -9,7 +9,7 @@ exports.run = (client, message, args) => {
 .setThumbnail(client.user.avatarURL)
       .addField('**Genel**', '`kick`, `oylama`, `reboot`, `ban`, `banlist`, `duyuru`, `çekiliş`, `isim`, `fakemesaj`, `uyarı`, `sabitle`, `partner`, `botkontrol`')
       .addField('**Gerekli Komutlar**', '`otorol-sistemi`, `seviye-sistemi`, `sunucu-sistemi`')
-      .addField('**Diğer**', '`herkesten-rol-al`, `herkese-rol-ver`, `unbanall`')
+      .addField('**Diğer**', '`herkesten-rol-al`, `herkese-rol-ver`, `unbanall`,`rol-ver`,`rol-al`,`sohbet-kapat`,`sohbet-aç`')
       .addField('**Sunucu Komutları**', '`ses-kanal-aç`, `kanal-açıklama`, `rol-liste`, `temizle`, `yaz`, `mesajat`, `güvenlik`, `rol-koruma`, `kanal-koruma`, `reklam-engelleme`')
     .setFooter(``, client.user.avatarURL)
     .setTimestamp()

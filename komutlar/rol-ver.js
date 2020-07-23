@@ -12,12 +12,12 @@ exports.run = (client, message, args) => {
   /////FORCEX
   message.react("EMOJI ID")
   /////FORCEX
-user.removeRole(rol)
+user.addRole(rol)
   /////FORCEX
   const embed = new Discord.RichEmbed()
   .setColor('RED')
   .setTitle(`Başarılı`)
-  .setDescription(`**Başarılı ${rol} Adlı Rolu ${user} Adlı Kullanıcıdan Cektım** :white_check_mark: `)
+  .setDescription(`**Başarılı ${user} Adlı Kullanıcıya ${rol} Adlı Rolunu Verdim** :white_check_mark: `)
   .setTimestamp()
   message.channel.send(embed)
 
@@ -27,12 +27,12 @@ user.removeRole(rol)
 exports.conf = {
   enabled: true,
   guildOnly: true,
-  aliases: [],
+  aliases: ['rol-ver'],
   permLevel: 0
 };
 
 exports.help = {
-  name: 'rol-al',
+  name: 'rol-ver',
   description: 'İstediğiniz kişiyi istediğiniz rolü verir.',
   usage: 'rol-ver [kullanıcı] [@rol]'
 };

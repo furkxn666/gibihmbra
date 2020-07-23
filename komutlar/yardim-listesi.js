@@ -41,12 +41,12 @@ exports.run = (client, message, params) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ["help"],
+  aliases: ["yardım"],
   permLevel: 0
 };
 
 exports.help = {
   name: "yardım",
-  description: "Tüm komutları gösterir.",
+  description: "yardım",
   usage: "yardım "
 };
