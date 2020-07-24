@@ -442,7 +442,7 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if (msg.content.toLowerCase() === '!ip') {
-    msg.reply('<a:tik:734150057640722473>  IP`miz/Tıkla Bağlan: steam://connect/185.193.165.84***   <a:ylldz:734150011297726535>');
+    msg.reply('<a:tik:734150057640722473>  ***IP`miz/Tıkla Bağlan: steam://connect/185.193.165.84***   <a:ylldz:734150011297726535>');
   }
 });
 client.login(ayarlar.token);
