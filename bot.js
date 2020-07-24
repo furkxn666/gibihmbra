@@ -380,6 +380,7 @@ client.on('message', async message => {
 });
 
 
+
 client.elevation = message => {
   if (!message.guild) {
     return;
