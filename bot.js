@@ -186,7 +186,36 @@ client.on("channelDelete", async channel => {
   if (yetkili.id === "734142932776386651") return;
   if (yetkili.id === "734142932776386651") return;
   
-
+//--------------------------------Hg Kanalı---------------------------------\\
+client.on("guildMemberAdd", member => {
+  const kanal = "734441110633709718";
+  let user = client.users.get(member.id);
+  require("moment-duration-format");
+  const kurulus = new Date().getTime() - user.createdAt.getTime();
+  var kontrol;
+  if (kurulus < 1296000000)
+    kontrol = " <a:hayir:736170502485442602> **__Bu Hesap Güvenilir Değil__** ";
+  if (kurulus > 1296000000)
+    kontrol =
+      " <a:tik:734150057640722473> **__Bu Hesap Güvenilir Gözüküyor__** ";
+  moment.locale("tr");
+  let buse = client.channels.get(kanal);
+  buse.send({
+    embed: {
+      color: Math.floor(Math.random() * 16777214) + 1,
+      description:
+        "<a:tacc:736170615999823893> **Hoşgeldin!**"  +
+        member +
+        " **Seninle `" +
+        member.guild.memberCount +
+        "` Kişiyiz **\n\n <a:sagg:736170579509510176> **Sunucuya Kayıt Olmak İçin <#734143025365909514> Nick, Isim ve Yaş Yazınız ! **\n\n <a:kilit:736170555807498261> <@&734142954930831392> **Rolündeki yetkililer sizinle ilgilenicektir ** \n\n  <a:_:736170528615694368> **Hesabın Oluşturulma Tarihi:** " +
+        moment(member.user.createdAt).format("**__DD MMMM YYYY (hh:mm)__**") +
+        "  \n\n" +
+        kontrol +
+        " \n ",
+      }
+  });
+});
    
 const sChannel = channel.guild.channels.find(c=> c.id ==="734143027593084989")
   let embed = new Discord.RichEmbed()
@@ -407,7 +436,13 @@ client.on("error", e => {
 
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 'sa') {
-    msg.reply('Aleyküm selam,  hoş geldin ^^');
+    msg.reply('Aleyküm selam,  Hoş geldin <a:kelebek:736170367508545566>');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === '!ip') {
+    msg.reply('<a:tik:734150057640722473>  IP`miz/Tıkla Bağlan: steam://connect/185.193.165.84***   <a:ylldz:734150011297726535>');
   }
 });
 client.login(ayarlar.token);
