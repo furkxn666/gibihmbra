@@ -390,7 +390,7 @@ if (kurulus < 1296000000) kontrol = ' **__Bu Hesap Güvenilir Değil__** '
 if (kurulus > 1296000000) kontrol = ' <a:tik:728589907232161863> **__Bu Hesap Güvenilir Gözüküyor__** '
   moment.locale("tr");
   let buse = client.channels.get(kanal);
-buse.send("▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ \n\n **Hoşgeldin! " + member + " Seninle Beraber __\`" + member.guild.memberCount + "\`__ Kişiyiz \n\n  Sunucuya Kayıt Olmak İçin <#734143025365909514> İsim Yaş Yazınız ! \n\n  <@&734142954930831392> Kayıt Sorumlusu Rolündeki yetkililer sizinle ilgilenicektir  \n\n  Hesabın Oluşturulma Tarihi:** " + moment(member.user.createdAt).format("YYYY **__DD MMMM dddd (hh:mm:ss)__**") +  "  \n\n"  + kontrol + " \n\n ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬");
+buse.send("▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ \n\n **Hoşgeldin! " + member + " Seninle Beraber __\`" + member.guild.memberCount + "\`__ Kişiyiz \n\n  Sunucuya Kayıt Olmak İçin <#734143025365909514> İsim Yaş Yazınız ! \n\n  <@&734142954930831392> Kayıt Sorumlusu Rolündeki yetkililer sizinle ilgilenicektir  \n\n  Hesabın Oluşturulma Tarihi:** " + moment(member.user.createdAt).format("**__YYYY DD MMMM dddd (hh:mm:ss)__**") +  "  \n\n"  + kontrol + " \n\n ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬");
 });
 
 client.elevation = message => {
