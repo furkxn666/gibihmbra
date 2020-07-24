@@ -9,7 +9,7 @@ module.exports = client => {
 var oyun = [
        "👑185.163.195.84👑",
        "👑prooyun.net👑",
-       "furko toptur gerı adamdır",
+       "#Vikings",
        ""
     ];
 
@@ -22,7 +22,7 @@ var oyun = [
     
   console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] BOT: Aktif, Komutlar yüklendi!`);
   console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] BOT: ${client.user.username} ismi ile giriş yapıldı!`);
-  client.user.setStatus("dnd"); 
+  client.user.setStatus("idle"); 
   client.user.setActivity(`${prefix}yardım + ${client.guilds.size} sunucu + ${client.users.size} kullanıcı`);
   console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] BOT: Oyun ismi ayarlandı!`);
 };
